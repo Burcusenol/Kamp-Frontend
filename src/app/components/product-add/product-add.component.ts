@@ -23,10 +23,10 @@ export class ProductAddComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.createProductAddFrom();
+    this.createProductAddForm();
   }
 
-  createProductAddFrom() {
+  createProductAddForm() {
     this.productAddForm = this.formBuilder.group({
       productName: ['', Validators.required],
       unitPrice: ['', Validators.required],
